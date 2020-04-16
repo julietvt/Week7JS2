@@ -1,0 +1,54 @@
+задание 1
+в условии вводить числа не надо, это делается до
+
+задание 2
+каждый case до break отделяйте фигурными скобками {} . они нужны для области видимсоти
+
+задание 3
+каждый четвертый это i=i+3
+получим цикл for(i=minRange; i<=maxRange, i=i+3) { console.log(i); }
+где minRange, maxRange это границы диапазона
+
+задание 4 +
+задание 5 +
+задание 6 +
+задание 7 +
+задание 8 + 
+
+задание 9
+у вас программа находит все простые числа внутри введенного
+это почти да.но нужен флаг например , который при его наличии (флага)сразу позвонит сказать чтооно простое
+let n=+prompt();
+let i, flag=false;
+if(n==1) flag=true;
+for (i=2; i<n; i++){
+   if(n%i == 0) {
+     flag=false;
+     break;
+   }
+   else{
+     flag=true;
+     break;
+   }
+}
+if (flag==true) alert('prostoe');
+else alert('neprostoe');
+
+задание 10 +
+задание 11 +
+
+задание 12 +
+можно еще сделать на подобии следующего
+const student = {
+	fname: 	"Vasya",
+	lname: 	"Petrov",
+	isMale:  true,
+	age: 	20 
+};
+const edu = {
+	faculty: 	"Math",
+	depart: 	"Computer Science" 
+};
+const studInfo = Object.assign(student, edu);
+console.log(infoLog(studInfo));
+
